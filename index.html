@@ -31,6 +31,11 @@
 <a id="sun8wdgithubcom" class="anchor" href="#sun8wdgithubcom" aria-hidden="true"><span class="octicon octicon-link"></span></a>sun8wd.github.com</h1>
 
 <p>sun8wd的博客</p>
+{% for post in site.posts %}
+
+{{ post.date|date_to_string }} <a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a>
+
+{% endfor %}
       </section>
     </div>
 
