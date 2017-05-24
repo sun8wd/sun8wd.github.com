@@ -14,12 +14,15 @@
       <h1 class="project-name">Sun8wd.GitHub.com</h1>
       <h2 class="project-tagline">sun8wd的博客</h2>
     </section>
-
+ 
     <section class="main-content">
       <h1>
 <a id="sun8wdgithubcom" class="anchor" href="#sun8wdgithubcom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>sun8wd.github.com</h1>
-
-<p>sun8wd的博客</p>
+<ul>
+ {% for post in site.posts %}
+       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+   {% endfor %}
+  </ul>
 
       <footer class="site-footer">
 
